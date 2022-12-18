@@ -1,0 +1,145 @@
+/* Write your CSS here */
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@media screen and (min-width: 768px) {
+  .bg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: flex-start; */
+    height: 100vh;
+    flex-grow: 1;
+  }
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 80%;
+  border-bottom: 1px solid #475569;
+}
+.content-sub-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  height: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .content-container {
+    flex-direction: row;
+  }
+}
+.comment-heading {
+  font-size: 35px;
+  font-family: 'Roboto';
+  color: #1e293b;
+  font-weight: 600;
+}
+.comment-description {
+  font-size: 18px;
+  font-family: 'Roboto';
+  color: #475569;
+  font-weight: 600;
+}
+.user-name {
+  padding: 10px;
+  font-family: 'Roboto';
+  color: #475569;
+  font-weight: 600;
+  border-radius: 5px;
+  border: solid;
+  margin-bottom: 10px;
+  border: 1px solid #475569;
+}
+.img-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-self: flex-end;
+  padding: 10px;
+  order: -1;
+}
+@media screen and (min-width: 768px) {
+  .img-con {
+    order: 1;
+  }
+}
+.text-area {
+  float: left;
+  width: 300px;
+  margin-top: 6px;
+  height: 150px;
+  outline: none;
+  padding: 10px;
+  font-family: 'Roboto';
+  color: #475569;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid #475569;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .text-area {
+    width: 400px;
+    height: 150px;
+  }
+}
+.add-comment-button {
+  padding: 7px;
+  background-color: #0284c7;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: 'Roboto';
+  border-radius: 5px;
+  border: solid;
+  border-color: none;
+  width: 120px;
+  margin-bottom: 5px;
+}
+.img {
+  height: 300px;
+  width: 350px;
+}
+.hr-line {
+  color: #475569;
+}
+.button-container {
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 50%;
+  width: 80%;
+  margin-top: 0px;
+}
+.comments-counts {
+  font-family: 'Roboto';
+  color: #475569;
+  font-weight: 600;
+  margin-top: 0px;
+  font-size: 17px;
+  align-self: flex-start;
+}
+.comment-count-span {
+  font-family: 'Roboto';
+  color: #ffffff;
+  background-color: #0ea5e9;
+  font-weight: 500;
+  padding: 5px;
+  font-size: 17px;
+  border-radius: 5px;
+}
+.comment-list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  flex-grow: 1;
+}
